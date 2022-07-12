@@ -2,6 +2,7 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -23,6 +24,12 @@ body {
 
 section {
     padding: 108px 0;
+}
+
+.section-title {
+    position: relative;
+    font-size: 36px;
+    margin: 0 0 60px 0;
 }
 
 .splash {
@@ -94,5 +101,22 @@ section {
     font-size: 24px;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 6px;
+    transform: translateX(-50%);
+    background: orange;    
+}
+
+/* About */
+
+.about {
+    background: #f0f0f0;
 }
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
