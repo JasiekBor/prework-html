@@ -1,3 +1,83 @@
+/* Global */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fff;
+    
+}
+
+section {
+    padding: 108px 0;
+}
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url(https://i.postimg.cc/CKzD2c2C/IMG-20210719-211615.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.splash i {
+    font-size: 24px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.splash i::after {
+    background-color: #fff;
+    color: orange;
+}
+
+.page-title {
+    color: #fff;
+    font-size: 60px;
+    margin: 24px 0 0 0;
+    position: relative;
+}
+
+.page-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 6px;
+    transform: translateX(-50%);
+    background: orange;
+}
+
+.page-subtitle {
+    margin: 48px 0 0 0;
+    font-size: 28px;
+    color: #fff;
+}
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
